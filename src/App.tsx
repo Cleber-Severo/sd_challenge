@@ -1,5 +1,6 @@
 import './App.scss'
 import { Navbar } from './components/Navbar/index.'
+import { NewsLetter } from './components/NewsLetter'
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
     <div className='main-container'>
       <main>
         <Navbar />
+        <NewsLetter />
       </main>
     </div>
   )
