@@ -9,6 +9,10 @@
     }
     padding-top: 80px;
 
+    img {
+    	transform: translate(0, -70px);
+    }
+
     > div {
         display: flex;
         flex-direction: column;
