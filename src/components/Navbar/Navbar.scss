@@ -1,0 +1,26 @@
+nav.navbar,
+nav.navbar > ul {
+    display: flex;
+}
+
+nav.navbar {
+    justify-content: space-between;
+}
+
+nav.navbar > ul {
+    list-style: none;
+    gap: 10px;
+}
+
+nav.navbar > ul li {
+    color: rgba(32, 32, 32, 1);
+    font-weight: 500;
+    font-size: 16px;
+
+    transition: all .25s ease;
+}
+
+nav.navbar > ul li:hover {
+    cursor: pointer;
+    border-bottom: 1px solid rgba(32, 32, 32, 1);
+}

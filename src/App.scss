@@ -1,0 +1,23 @@
+#root {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.main-container {
+  min-height: 100vh;
+   padding: 0 360px;
+
+  background-image: url('assets/linhas.png'), url('assets/vector-new.png'), url('assets/main_bg.jpg'), ;
+  background-position: right bottom, 100% 0%, left top;
+  background-repeat: no-repeat, no-repeat, repeat;
+}
+
+
+@media screen and (max-width: 1440px) {
+  .main-container {
+   padding: 0 160px;
+  }
+}
