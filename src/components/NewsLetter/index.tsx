@@ -1,6 +1,7 @@
 import React from 'react'
 
 import BannerImg from '../../assets/imagem-banner.png'
+import MailIcon from '../../assets/mail.svg'
 
 import './Newsletter.scss'
 
@@ -15,8 +16,12 @@ export const NewsLetter = () => {
             </p>
 
             <form action="">
-                <input type="text" />
+              <div>
+                <img src={MailIcon} alt="newsleetter"  />
+                <label htmlFor="mail-newsletter">Insira seu e-mail</label>
+                <input type="text" id='mail-newsletter'/>
                 <button>Assinar newsletter</button>
+              </div>
             </form>
         </div>
           <img src={BannerImg} alt="big plant in the main page" />
