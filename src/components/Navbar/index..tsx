@@ -1,24 +1,50 @@
 import React from 'react'
 
 import Logo from '../../assets/logo.png'
-import './Navbar.scss'
+// import './Navbar.scss'
+import styled from 'styled-components'
 
+
+const MainNav = styled.nav`
+    justify-content: space-between;
+    padding-top: 10px;
+    display: flex;
+`
+
+const NavList = styled.ul`
+  display: flex;
+  list-style: none;
+  gap: 10px;
+`
+
+const NavListItem = styled.li`
+  color: ${props => props.theme.color.primary.main};
+  font-weight: 500;
+  font-size: 16px;
+  border-bottom: 1px solid transparent;
+  transition: all .25s ease;
+  
+  &:hover {
+      cursor: pointer;
+      border-color: ${props => props.theme.color.primary.main};
+  }
+`
 
 export const Navbar = () => {
   return (
-    <nav className='navbar'>
+    <MainNav>
           <img src={Logo} alt="logo" />
-        <ul>
-            <li>Como fazer</li>
+        <NavList>
+            <NavListItem>Como fazer</NavListItem>
             /
-            <li>Ofertas</li>
+            <NavListItem>Ofertas</NavListItem>
             /
-            <li>Depoimentos</li>
+            <NavListItem>Depoimentos</NavListItem>
             /
-            <li>Vídeos</li>
+            <NavListItem>Vídeos</NavListItem>
             /
-            <li>Meu Carrinho</li>
-        </ul>
-    </nav>
+            <NavListItem>Meu Carrinho</NavListItem>
+        </NavList>
+    </MainNav>
   )
 }
