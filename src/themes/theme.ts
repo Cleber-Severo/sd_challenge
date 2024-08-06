@@ -10,7 +10,7 @@ const theme = {
       contrastText: "#fdfdfd",
     },
   },
-
+  errorInput: 'red',
   border: {
     radius: "15px",
     style: "2px solid #736681",

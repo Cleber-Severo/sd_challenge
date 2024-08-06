@@ -1,3 +1,4 @@
+import { Form } from "formik"
 import styled from "styled-components"
 
 export const Banner = styled.section`
@@ -42,14 +43,17 @@ export const BannerParagraph = styled.p`
   max-width: 560px;
 `
 
-export const MailForm = styled.form`
+export const MailForm = styled(Form)`
   margin-top: 37px;
 `
 
 export const MailFormContainer = styled.div`
-  height: 75px;
+  border: 1px solid transparent;
   display: flex;
+
   position: relative;
+  height: 75px;
+  margin-bottom: 12px;
 `
 
 export const MailIcon = styled.img`
@@ -60,7 +64,7 @@ export const MailIcon = styled.img`
   opacity: 0.3px;
   position: absolute;
   left: 17px;
-  top: calc(50% - (0.96px/2)); 
+  top: calc(47% - (0.96px/2)); 
 
   margin: auto 0;
   z-index: 10;
@@ -75,7 +79,6 @@ export const FormLabel = styled.label`
 `
 
 export const MailInput = styled.input`
-  height: 100%;
   width: 391px;
   border: none;
 
