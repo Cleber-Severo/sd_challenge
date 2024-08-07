@@ -1,3 +1,4 @@
+import Banner from './components/Banner/index'
 import './App.scss'
 import { Navbar } from './components/Navbar/index.'
 import { NewsLetter } from './components/NewsLetter'
@@ -9,6 +10,7 @@ function App() {
       <main>
         <Navbar />
         <NewsLetter />
+        <Banner />
       </main>
     </div>
   )
