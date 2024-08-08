@@ -1,14 +1,21 @@
-import { Form } from "formik"
-import styled from "styled-components"
+import { Form } from 'formik'
+import styled from 'styled-components'
 
 export const Banner = styled.section`
   display: flex;
+  animation-name: example;
+  animation-duration: 2s;
+  
 
   background: {
     image: url('assets/imagem-banner.png');
     position: right bottom;
     size: 787px;
     repeat: no-repeat;
+  }
+  @keyframes example {
+    from {transform: translateX(-400px)}
+    to {transform: translateX(0px)}
   }
 
   padding-top: 80px;

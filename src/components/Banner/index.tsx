@@ -10,6 +10,18 @@ const StyledBanner = styled.section`
 
   width: 995px;
   height: 440px;
+
+  margin-top: -30px;
+
+
+  animation-name: bannerAnimate;
+  animation-duration: 3s;
+  
+  @keyframes bannerAnimate {
+    from {transform: translateY(400px); opacity: 0; filter: blur(2px);}
+    to {transform: translateX(0px); opacity: 1; filter: blur(0px);}
+  }
+
   img {
     object-fit: cover;
   }
@@ -56,8 +68,7 @@ const StyledSpanBanner = styled.span`
   font-size: 22px;
   font-weight: 400;
   line-height: 26.82px;
-  text-align: left;
-      
+  text-align: left;      
 `
 
 const Banner = () => {
